@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { Metadata } from 'next';
- 
+
 //Метаданные для страницы
 export const metadata: Metadata = {
   title: "Сайт для тестов",
@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={`${styles.description} ${styles.center}`}>
-        <h1>Привет SCK-1.kz</h1>               
+        <h1>Привет SCK-1.kz</h1>
       </div>
 
       <div className={styles.center}>
@@ -29,9 +29,9 @@ export default function Home() {
         />
       </div>
 
-      <div className={`${styles.grid} ${styles.center}`}>
+      <div className={styles.grid}>
         <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          href="https://pimenov.kz"
           className={styles.card}
           target="_blank"
           rel="noopener noreferrer"
@@ -39,19 +39,21 @@ export default function Home() {
           <h2>
             Что сделано<span>-&gt;</span>
           </h2>
-          <p>Этот сервер куплен для тестов на VDS hoster.kz а так же куплен домен <Link href={'/'}>pimenov.kz</Link> + разобрался как установить сертификат letsEncrypt</p>
+          <p>Этот сервер куплен для тестов на VDS hoster.kz а так же куплен домен
+            pimenov.kz
+            + разобрался как установить сертификат letsEncrypt</p>
         </a>
 
         <div>
-            <Image
-              src="/letsencrypt.png"
-              alt="letsencrypt"
-              className={styles.Logo}
-              width={337}
-              height={396}
-              priority
-            />
-          
+          <Image
+            src="/letsencrypt.png"
+            alt="letsencrypt"
+            className={styles.Logo}
+            width={337}
+            height={396}
+            priority
+          />
+
         </div>
 
       </div>

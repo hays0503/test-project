@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pimenov.kz
+
+# Sitemaps
+Sitemap: https://pimenov.kz/sitemap.xml
